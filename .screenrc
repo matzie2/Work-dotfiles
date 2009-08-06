@@ -1,0 +1,12 @@
+startup_message off
+
+#the session name depends on a patch here: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=488619
+#caption always "%{= bw}GNU Screen on host '%H', Session Name '%S', Active Window:  '%n:%t' %{+b w} %h %=%t %c"
+
+caption always "%{= bw}GNU Screen on host '%H', Active Window:  '%n:%t' %{+b w} %h %=%t %c"
+hardstatus alwayslastline "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
+termcapinfo linux|xterm|rxvt|xterm-color ti@:te@:XT
+
+#setenv SSH_AUTH_SOCK $HOME/.screen-ssh-agent
+#screen -t '' 0 ssh-agent -a $SSH_AUTH_SOCK $SHELL
+screen

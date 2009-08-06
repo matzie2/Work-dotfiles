@@ -1,0 +1,7 @@
+[user]
+	email = matt.saunders@uk.insight.com
+	name = Matt Saunders
+[color]
+	diff = auto
+	status = auto
+	branch = auto

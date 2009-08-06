@@ -12,12 +12,12 @@
 
 # Command Line History (newest to oldest):
 :wq
+:q!
+:q
 :Q
 :Q!
-:q!
 :qa!
 :Wq
-:q
 :tabnew /etc/bashrc
 
 # Search String History (newest to oldest):
@@ -36,24 +36,27 @@
 "1	LINE	0
 	shelltitle '] |bash'
 ""-	CHAR	0
-	.
+	8
 
 # File marks:
-'0  91  14  ~/.bashrc
-'1  94  0  ~/.bashrc
-'2  1  0  ~/~.bashrc
-'3  83  36  ~/.bashrc
-'4  39  24  ~/.bashrc
-'5  12  0  ~/.screenrc
-'6  3  0  ~/hello
-'7  13  0  ~/.screenrc
-'8  50  34  ~/.bashrc
-'9  26  116  /etc/profile.d/ssh-agent.sh.DISABLED
+'0  83  24  ~/.bashrc
+'1  93  17  ~/.bashrc
+'2  58  0  ~/.vimrc
+'3  97  14  ~/.bashrc
+'4  100  0  ~/.bashrc
+'5  1  0  ~/~.bashrc
+'6  39  24  ~/.bashrc
+'7  12  0  ~/.screenrc
+'8  3  0  ~/hello
+'9  13  0  ~/.screenrc
 
 # Jumplist (newest first):
--'  91  14  ~/.bashrc
--'  94  0  ~/.bashrc
--'  83  0  ~/.bashrc
+-'  83  24  ~/.bashrc
+-'  93  0  ~/.bashrc
+-'  97  0  ~/.bashrc
+-'  58  0  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  100  0  ~/.bashrc
 -'  1  0  ~/~.bashrc
 -'  39  0  ~/.bashrc
 -'  50  8  ~/.bashrc
@@ -62,7 +65,7 @@
 -'  3  0  ~/hello
 -'  1  0  ~/hello
 -'  6  0  ~/.screenrc
--'  93  4  ~/.bashrc
+-'  99  4  ~/.bashrc
 -'  26  116  /etc/profile.d/ssh-agent.sh.DISABLED
 -'  1  0  /etc/profile.d/ssh-agent.sh.DISABLED
 -'  1  0  ~/.screenrc
@@ -146,37 +149,43 @@
 -'  1  393  ~/.ssh/id_rsa.pub
 -'  1  393  ~/.ssh/id_rsa.pub
 -'  1  393  ~/.ssh/id_rsa.pub
--'  1  393  ~/.ssh/id_rsa.pub
--'  1  393  ~/.ssh/id_rsa.pub
--'  1  393  ~/.ssh/id_rsa.pub
 
 # History of marks within files (newest to oldest):
 
 > ~/.bashrc
-	"	91	14
-	^	94	1
-	.	91	14
+	"	83	24
+	^	83	25
+	.	83	24
 	+	50	36
-	+	91	33
-	+	92	17
-	+	94	1
-	+	92	3
-	+	93	16
-	+	91	30
-	+	93	18
+	+	97	33
+	+	98	17
+	+	100	1
+	+	98	3
+	+	99	16
+	+	97	30
+	+	99	18
 	+	50	35
 	+	38	21
 	+	39	24
 	+	83	36
-	+	91	0
-	+	92	0
-	+	93	0
-	+	94	0
-	+	91	0
-	+	92	0
-	+	93	0
-	+	94	0
-	+	91	14
+	+	97	0
+	+	98	0
+	+	99	0
+	+	100	0
+	+	97	0
+	+	98	0
+	+	99	0
+	+	100	0
+	+	97	14
+	+	100	3
+	+	95	0
+	+	101	0
+	+	96	60
+	+	93	17
+	+	83	24
+
+> ~/.vimrc
+	"	58	0
 
 > ~/~.bashrc
 	"	1	0

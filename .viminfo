@@ -8,19 +8,20 @@
 # hlsearch on (H) or off (h):
 ~H
 # Last Search Pattern:
-~MSle0~/HIST
+~MSle0~/ishsrc
 
 # Command Line History (newest to oldest):
 :wq
+:Wq
 :q!
 :q
 :Q
 :Q!
 :qa!
-:Wq
 :tabnew /etc/bashrc
 
 # Search String History (newest to oldest):
+??ishsrc
 ??HIST
 ? \<bashrc\>
 
@@ -33,24 +34,32 @@
 # Registers:
 "0	LINE	0
 	alias go28="sshs webdev28 \"W28 (Kevin)\""
-"1	LINE	0
+""1	LINE	0
+	410
+<ishsrcctrl01,172.30.57.165 ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAtFe6HaFnSyD5mi0oW0w/iXoBDKGyJjpHNjPtptw2nOkUXe/Jq5H5mE0FyOjXZLUhL8baMKNRiru7PjPIgyHHfwpkR5oTdpni68yP85IRWuXH7DFVO/7nci/pJSWXvAgH2C6ST2R3us+dy3y48MSY5s9KBpgCeDvHu/zvHvO9rr3bSckShzBqyB9/hDIh82KhAwa2mdwTdev3fJGLUls8D/TK7w9Xu6Uy9V2x4gMqnTXKONBqfVCSffXEaX70mGdOXL9VUwhX2yZVC/Tyr0R4sTndGEn5WiXVR3XQa3LpFC23JZCJkWY3JgSMS1HK6Eu8Sy4uHZZGAirF+A7fdDkGhQ==
+"2	LINE	0
+	411
+<ishsrcctrl01.eu.insight.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAtFe6HaFnSyD5mi0oW0w/iXoBDKGyJjpHNjPtptw2nOkUXe/Jq5H5mE0FyOjXZLUhL8baMKNRiru7PjPIgyHHfwpkR5oTdpni68yP85IRWuXH7DFVO/7nci/pJSWXvAgH2C6ST2R3us+dy3y48MSY5s9KBpgCeDvHu/zvHvO9rr3bSckShzBqyB9/hDIh82KhAwa2mdwTdev3fJGLUls8D/TK7w9Xu6Uy9V2x4gMqnTXKONBqfVCSffXEaX70mGdOXL9VUwhX2yZVC/Tyr0R4sTndGEn5WiXVR3XQa3LpFC23JZCJkWY3JgSMS1HK6Eu8Sy4uHZZGAirF+A7fdDkGhQ==
+"3	LINE	0
 	shelltitle '] |bash'
-""-	CHAR	0
+"-	CHAR	0
 	8
 
 # File marks:
-'0  83  24  ~/.bashrc
-'1  93  17  ~/.bashrc
-'2  58  0  ~/.vimrc
-'3  97  14  ~/.bashrc
-'4  100  0  ~/.bashrc
-'5  1  0  ~/~.bashrc
-'6  39  24  ~/.bashrc
-'7  12  0  ~/.screenrc
-'8  3  0  ~/hello
-'9  13  0  ~/.screenrc
+'0  28  0  ~/.ssh/known_hosts
+'1  83  24  ~/.bashrc
+'2  93  17  ~/.bashrc
+'3  58  0  ~/.vimrc
+'4  97  14  ~/.bashrc
+'5  100  0  ~/.bashrc
+'6  1  0  ~/~.bashrc
+'7  39  24  ~/.bashrc
+'8  12  0  ~/.screenrc
+'9  3  0  ~/hello
 
 # Jumplist (newest first):
+-'  28  0  ~/.ssh/known_hosts
+-'  1  0  ~/.ssh/known_hosts
 -'  83  24  ~/.bashrc
 -'  93  0  ~/.bashrc
 -'  97  0  ~/.bashrc
@@ -148,9 +157,13 @@
 -'  1  393  ~/.ssh/id_rsa.pub
 -'  1  393  ~/.ssh/id_rsa.pub
 -'  1  393  ~/.ssh/id_rsa.pub
--'  1  393  ~/.ssh/id_rsa.pub
 
 # History of marks within files (newest to oldest):
+
+> ~/.ssh/known_hosts
+	"	28	0
+	.	28	0
+	+	28	0
 
 > ~/.bashrc
 	"	83	24

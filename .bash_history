@@ -324,3 +324,39 @@ git show 0f345
 git show 0f345 --name-only
 vi ~/.bashrc
 ll
+go29
+go29
+vi .bashrc
+git commit -a
+git log
+go29
+ssh webdev24
+cat ~/.bash_logout 
+ll
+git log
+git config
+git config --get-all
+git config --get-all --global
+git config --get-all --list
+cd /u/
+ll
+cd clean/htdocs/
+ll
+cd uk/
+ll
+cd apps/test/
+ll
+cd ~
+git diff
+git diff --name-only
+git add * -av
+git add * -Av
+git commit
+git add .bashrc 
+git add .bash_history 
+cat .viminfo 
+git commit
+cvs-up-vhost.sh 
+go29
+ll
+cd /u/

@@ -88,7 +88,13 @@ alias go6="sshs ishwebdev04 \"W06\""
 alias go7="sshs ishwebdev04 \"W07\""
 alias gogit="sshs ishsrcctrl01 \"Git01\""
 
+
+
+PATH=$PATH:~/bin:.
+
+
+#Start or Reconnect to a Screen, unless we're already in one!
 if [ $TERM = "linux" ]
 then
     screen -xRR -S "Main"
-fi  
+fi 

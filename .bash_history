@@ -307,3 +307,20 @@ vi ~.bashrc
 vi ~/.bashrc
 echo $TERM
 vi ~/.bashrc
+go29
+ll
+git diff --cached
+git commit
+git add *
+git commit
+git add -aNv
+git add -Anv
+git add -Av
+git commit
+vim
+vi ~/.vimrc
+git log
+git show 0f345
+git show 0f345 --name-only
+vi ~/.bashrc
+ll

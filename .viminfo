@@ -8,19 +8,20 @@
 # hlsearch on (H) or off (h):
 ~H
 # Last Search Pattern:
-~MSle0~/ishsrc
+~MSle0~/hidden
 
 # Command Line History (newest to oldest):
-:wq
-:Wq
-:q!
-:q
 :Q
 :Q!
+:q
+:q!
+:wq
+:Wq
 :qa!
 :tabnew /etc/bashrc
 
 # Search String History (newest to oldest):
+??hidden
 ??ishsrc
 ??HIST
 ? \<bashrc\>
@@ -46,18 +47,30 @@
 	8
 
 # File marks:
-'0  28  0  ~/.ssh/known_hosts
-'1  83  24  ~/.bashrc
-'2  93  17  ~/.bashrc
-'3  58  0  ~/.vimrc
-'4  97  14  ~/.bashrc
-'5  100  0  ~/.bashrc
-'6  1  0  ~/~.bashrc
-'7  39  24  ~/.bashrc
-'8  12  0  ~/.screenrc
-'9  3  0  ~/hello
+'0  165  12  /u/clean/htdocs/templates/signup/newcontact.tpl
+'1  37  4  /u/clean/htdocs/templates/signup/newcustomer.tpl
+'2  144  24  /u/clean/htdocs/templates/signup/newcontact.tpl
+'3  204  9  /u/clean/htdocs/templates/signup/newaccount.tpl
+'4  8  16  /u/clean/htdocs/templates/signup/newaccount_preferences.tpl
+'5  1  0  /u/clean/htdocs/templates/signup/newaccount_preferences.tpl
+'6  210  12  /u/clean/htdocs/templates/signup/newaccount.tpl
+'7  1  0  /etc/php.d/apc.ini
+'8  1  0  /u/clean/htdocs/uk/apps/test/apc.php
+'9  28  0  ~/.ssh/known_hosts
 
 # Jumplist (newest first):
+-'  165  12  /u/clean/htdocs/templates/signup/newcontact.tpl
+-'  144  24  /u/clean/htdocs/templates/signup/newcontact.tpl
+-'  37  4  /u/clean/htdocs/templates/signup/newcustomer.tpl
+-'  1  0  /u/clean/htdocs/templates/signup/newcustomer.tpl
+-'  1  0  /u/clean/htdocs/templates/signup/newcontact.tpl
+-'  204  9  /u/clean/htdocs/templates/signup/newaccount.tpl
+-'  1  0  /u/clean/htdocs/templates/signup/newaccount.tpl
+-'  8  16  /u/clean/htdocs/templates/signup/newaccount_preferences.tpl
+-'  1  0  /u/clean/htdocs/templates/signup/newaccount_preferences.tpl
+-'  210  12  /u/clean/htdocs/templates/signup/newaccount.tpl
+-'  1  0  /etc/php.d/apc.ini
+-'  1  0  /u/clean/htdocs/uk/apps/test/apc.php
 -'  28  0  ~/.ssh/known_hosts
 -'  1  0  ~/.ssh/known_hosts
 -'  83  24  ~/.bashrc
@@ -144,21 +157,26 @@
 -'  1  393  ~/.ssh/id_rsa.pub
 -'  1  393  ~/.ssh/id_rsa.pub
 -'  1  393  ~/.ssh/id_rsa.pub
--'  1  393  ~/.ssh/id_rsa.pub
--'  1  393  ~/.ssh/id_rsa.pub
--'  1  393  ~/.ssh/id_rsa.pub
--'  1  393  ~/.ssh/id_rsa.pub
--'  1  393  ~/.ssh/id_rsa.pub
--'  1  393  ~/.ssh/id_rsa.pub
--'  1  393  ~/.ssh/id_rsa.pub
--'  1  393  ~/.ssh/id_rsa.pub
--'  1  0  ~/.-s
--'  1  393  ~/.ssh/id_rsa.pub
--'  1  393  ~/.ssh/id_rsa.pub
--'  1  393  ~/.ssh/id_rsa.pub
--'  1  393  ~/.ssh/id_rsa.pub
 
 # History of marks within files (newest to oldest):
+
+> /u/clean/htdocs/templates/signup/newcontact.tpl
+	"	165	12
+
+> /u/clean/htdocs/templates/signup/newcustomer.tpl
+	"	37	4
+
+> /u/clean/htdocs/templates/signup/newaccount.tpl
+	"	204	9
+
+> /u/clean/htdocs/templates/signup/newaccount_preferences.tpl
+	"	8	16
+
+> /etc/php.d/apc.ini
+	"	1	0
+
+> /u/clean/htdocs/uk/apps/test/apc.php
+	"	1	0
 
 > ~/.ssh/known_hosts
 	"	28	0

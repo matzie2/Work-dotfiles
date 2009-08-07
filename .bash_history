@@ -360,3 +360,111 @@ cvs-up-vhost.sh
 go29
 ll
 cd /u/
+cd /dev/
+ll
+mount
+go29
+ssh iweb
+ssh iweb
+vi /etc/php.d/apc.ini
+ssh ishwebdev01
+sudo bash -l
+mount
+cd /u/clean/htdocs/uk/apps/test/
+ll
+vi apc.php 
+cvs diff
+go27
+gogit
+cat .bashrc
+sshs ishsrcctrol01 "Git"
+sshs ishsrcctrol01
+ssh ishsrcctrl01
+vi .ssh/known_hosts 
+git log
+git diff --name-only
+git commit -a
+git log
+gogit
+gogit
+ssh ishsrcctrl01
+df -h
+uptime
+gogit
+gogit
+uptime
+uptime
+ssh ishsrcctrl01
+ll
+git log
+git log --abbrev-commit
+git log
+graphvix
+graphviz
+cd /etc/profile.d/
+ll
+ps axfu
+go29
+go24
+sudo bash -l
+go27
+goiweb
+goiweb
+go24
+cd /u/clean/
+ll
+cd htdocs/templates/
+ll
+cd account/
+ll
+cd ..
+ll
+cd signup/
+ll
+vi newaccount.tpl 
+vi newaccount_preferences.tpl 
+cvs up
+cvs login
+cvs up
+vi newaccount_preferences.tpl 
+cvs log newaccount.tpl 
+cvs diff -r 1.1 newaccount.tpl 
+cvs log newaccount_preferences.tpl 
+cvs diff -r 1.1 newaccount_preferences.tpl 
+vi newaccount.tpl 
+cvs diff -r 1.1 newaccount_preferences.tpl 
+ls
+vi newcontact.tpl 
+grep osf * -R
+ll
+vi newcustomer.tpl 
+cvs lgo
+cvs log
+vi newcontact.tpl 
+vi newcontact.tpl 
+ssh -A webdev27
+go27
+ssh iweb
+ssh -A iweb
+ls -alh
+ls -alh ssh
+ps axfu
+set
+vi /etc/bashrc 
+vi /etc/profile.d/ssh-agent.sh.DISABLED 
+ll
+vi ~/.bash_logout 
+rm .bash_logout 
+vi .bash_profile 
+ll
+ll
+sudo bash -l
+ssh -a webdev29
+ssh -a iweb
+cd .ssh
+ll
+scp authorized_keys iweb:~/.ssh
+scp authorized_keys iweb:~/.ssh/authorized_keys
+goiweb
+goiweb
+goiweb

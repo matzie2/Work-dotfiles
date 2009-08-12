@@ -1112,3 +1112,29 @@ git commit -m 'more bashrc tweaks'
 cd /
 vi bin/.git-completion.bash 
 vi bin/.git-completion.bash 
+gs
+git diff .bashrc
+git add .bashrc
+gs
+gs
+vim bin/.git-completion.bash 
+gs
+git add .bashrc
+gs
+git add bin/.git-completion.bash
+gs
+git commit -m'Added another new git_ps1 option'
+gs
+gs commit -m ''
+git commit -m ''
+gs commit -am ''
+gs commit -a -m ''
+git commit -a -m ''
+git commit -a -m 'making it easier to customise the GIT_PS1 messages'
+gl
+gs
+cd /etc/ssh
+cd
+vi ~/.bashrc 
+vi ~/.bashrc
+screen -r

@@ -1,3 +1,5 @@
 CVS/
 /files/
 *.swp
+/.bash_history
+/.viminfo

@@ -15,6 +15,8 @@ source ~/bin/colournames.sh
 source ~/bin/.git-completion.bash
 
 alias gs='git status'
+alias gl='git log'
+alias gb='git branch'
 
 alias rm='rm -i'
 alias cp='cp -i'
@@ -66,7 +68,7 @@ export GREP_COLOR='1;33'
 #this works and lets me use vars
 #export PS1="\n\u@\h:\[\e[32;1m\]\w\[\e[0m\] \$(__git_ps1 \"(Git Branch Info: %s)\")\n\! \u \W \$"
 
-export PS1="\n\[$PURPLE_BOLD\]\u\[$WHITE\]@\[$RED_BOLD\]\h:\[$YELLOW\]\w\[\e[0m\] \$(__git_ps1 \"(Git Branch Info: %s)\")\n\! \u \W \$>"
+export PS1="\n\[$PURPLE_BOLD\]\u\[$WHITE\]@\[$RED_BOLD\]\h:\[$YELLOW\]\w\[\e[0m\] \[$GREEN\]\$(__git_ps1 \"(\[$YELLOW\]Git repo, branch \[$WHITE\]: %s)\")\n\[$RESETCOLOURS\]\! \W \$>"
 
 
 

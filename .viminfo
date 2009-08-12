@@ -8,12 +8,12 @@
 # hlsearch on (H) or off (h):
 ~H
 # Last Search Pattern:
-~MSle0~/STASH
+~MSle0~/info
 
 # Command Line History (newest to oldest):
-:wq
-:w
 :q
+:w
+:wq
 :w ~/bin/colours.sh
 :tabnew
 :set nu!
@@ -52,6 +52,8 @@
 :sp
 
 # Search String History (newest to oldest):
+??info
+??Git branch info
 ??STASH
 ??werwre
 ? \<n\>
@@ -78,7 +80,7 @@
 # Registers:
 "0	CHAR	0
 	export B
-""1	CHAR	0
+"1	CHAR	0
 	export BLACK='\e[0;30m' # Black - Regular
 	export RED='\e[0;31m' # Red
 	export GREEN='\e[0;32m' # Green
@@ -135,48 +137,58 @@
 <ishsrcctrl01.eu.insight.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAtFe6HaFnSyD5mi0oW0w/iXoBDKGyJjpHNjPtptw2nOkUXe/Jq5H5mE0FyOjXZLUhL8baMKNRiru7PjPIgyHHfwpkR5oTdpni68yP85IRWuXH7DFVO/7nci/pJSWXvAgH2C6ST2R3us+dy3y48MSY5s9KBpgCeDvHu/zvHvO9rr3bSckShzBqyB9/hDIh82KhAwa2mdwTdev3fJGLUls8D/TK7w9Xu6Uy9V2x4gMqnTXKONBqfVCSffXEaX70mGdOXL9VUwhX2yZVC/Tyr0R4sTndGEn5WiXVR3XQa3LpFC23JZCJkWY3JgSMS1HK6Eu8Sy4uHZZGAirF+A7fdDkGhQ==
 "a	CHAR	0
 	€kIexport €kd€kh
-"-	CHAR	0
-	E
+""-	CHAR	0
+	"
 
 # File marks:
-'0  17  20  ~/.bashrc
-'1  55  0  ~/.bashrc
+'0  1941  23  ~/bin/.git-completion.bash
+'1  53  0  ~/.bashrc
 '2  167  28  ~/.git-completion.bash
-'3  83  0  ~/.bashrc
-'4  158  29  ~/.bashrc
-'5  57  73  ~/.bashrc
+'3  81  0  ~/.bashrc
+'4  156  29  ~/.bashrc
+'5  55  73  ~/.bashrc
 '6  258  1  ~/.git-completion.bash
 '7  177  1  ~/.git-completion.bash
 '8  10  11  ~/.bashrc
-'9  71  0  ~/.bashrc
+'9  69  0  ~/.bashrc
 
 # Jumplist (newest first):
--'  17  20  ~/.bashrc
--'  55  0  ~/.bashrc
--'  56  66  ~/.bashrc
--'  65  0  ~/.bashrc
--'  83  0  ~/.bashrc
+-'  1941  23  ~/bin/.git-completion.bash
+-'  2009  2  ~/bin/.git-completion.bash
+-'  559  6  ~/bin/.git-completion.bash
+-'  594  16  ~/bin/.git-completion.bash
+-'  699  20  ~/bin/.git-completion.bash
+-'  1068  21  ~/bin/.git-completion.bash
+-'  1434  17  ~/bin/.git-completion.bash
+-'  1666  12  ~/bin/.git-completion.bash
+-'  122  4  ~/bin/.git-completion.bash
+-'  152  41  ~/bin/.git-completion.bash
+-'  1  0  ~/bin/.git-completion.bash
+-'  53  0  ~/.bashrc
+-'  54  66  ~/.bashrc
+-'  63  0  ~/.bashrc
+-'  81  0  ~/.bashrc
 -'  167  28  ~/.git-completion.bash
 -'  44  20  ~/.git-completion.bash
 -'  53  0  ~/.git-completion.bash
 -'  258  1  ~/.git-completion.bash
--'  158  0  ~/.bashrc
--'  152  12  ~/.bashrc
--'  69  15  ~/.bashrc
--'  67  44  ~/.bashrc
--'  62  59  ~/.bashrc
--'  61  11  ~/.bashrc
--'  71  0  ~/.bashrc
--'  57  0  ~/.bashrc
+-'  156  0  ~/.bashrc
+-'  150  12  ~/.bashrc
+-'  67  15  ~/.bashrc
+-'  65  44  ~/.bashrc
+-'  60  59  ~/.bashrc
+-'  59  11  ~/.bashrc
+-'  69  0  ~/.bashrc
+-'  55  0  ~/.bashrc
 -'  12  0  ~/.bashrc
 -'  177  1  ~/.git-completion.bash
 -'  10  11  ~/.bashrc
 -'  165  3  ~/.git-completion.bash
--'  52  0  ~/.bashrc
--'  135  0  ~/.bashrc
--'  132  1  ~/.bashrc
 -'  50  0  ~/.bashrc
--'  51  0  ~/.bashrc
+-'  133  0  ~/.bashrc
+-'  130  1  ~/.bashrc
+-'  48  0  ~/.bashrc
+-'  49  0  ~/.bashrc
 -'  1  0  /home/.git-completion.bash
 -'  2070  22  ~/.git-completion.bash
 -'  2075  16  ~/.git-completion.bash
@@ -195,10 +207,10 @@
 -'  1039  5  ~/.git-completion.bash
 -'  35  0  ~/.git-completion.bash
 -'  1  0  ~/.git-completion.bash
--'  126  1  ~/.bashrc
+-'  124  1  ~/.bashrc
 -'  2  28  ~/.bash_profile
 -'  1  0  ~/.bash_profile
--'  134  1  ~/.bashrc
+-'  132  1  ~/.bashrc
 -'  1  0  ~/git-vim/README.rdoc
 -'  9  34  ~/.gitconfig
 -'  1  0  ~/.gitconfig
@@ -217,41 +229,39 @@
 -'  1  0  /u/clean/htdocs/uk/apps/test/apc.php
 -'  28  0  ~/.ssh/known_hosts
 -'  1  0  ~/.ssh/known_hosts
--'  109  24  ~/.bashrc
--'  119  0  ~/.bashrc
--'  123  0  ~/.bashrc
+-'  107  24  ~/.bashrc
+-'  117  0  ~/.bashrc
+-'  121  0  ~/.bashrc
 -'  58  0  ~/.vimrc
 -'  1  0  ~/.vimrc
 -'  1  0  ~/~.bashrc
--'  44  0  ~/.bashrc
--'  76  8  ~/.bashrc
+-'  42  0  ~/.bashrc
+-'  74  8  ~/.bashrc
 -'  12  0  ~/.screenrc
 -'  13  0  ~/.screenrc
 -'  3  0  ~/hello
 -'  1  0  ~/hello
 -'  6  0  ~/.screenrc
--'  125  4  ~/.bashrc
--'  26  116  /etc/profile.d/ssh-agent.sh.DISABLED
--'  1  0  /etc/profile.d/ssh-agent.sh.DISABLED
--'  1  0  ~/.screenrc
--'  10  3  /etc/bashrc
--'  2  28  ~/.bash_profile
--'  1  0  ~/.bash_profile
--'  1  0  ~/git-vim/README.rdoc
--'  1  0  ~/.bashrc
--'  53  4  ~/.vimrc
--'  54  0  ~/.vimrc
--'  53  4  /u/clean/php-europe/corelib/root.php
--'  35  0  ~/.vimrc
--'  52  4  ~/.vimrc
--'  53  0  ~/.bashrc
--'  54  66  ~/.bashrc
--'  63  0  ~/.bashrc
--'  81  0  ~/.bashrc
--'  167  28  ~/.git-completion.bash
--'  44  20  ~/.git-completion.bash
+-'  123  4  ~/.bashrc
 
 # History of marks within files (newest to oldest):
+
+> ~/bin/.git-completion.bash
+	"	1941	23
+	^	152	55
+	.	152	55
+	+	152	52
+	+	162	81
+	+	167	12
+	+	162	83
+	+	152	53
+	+	162	83
+	+	152	53
+	+	167	12
+	+	152	54
+	+	162	89
+	+	167	38
+	+	152	55
 
 > ~/.bashrc
 	"	17	20
@@ -452,6 +462,3 @@
 
 > /u/clean/htdocs/templates/signup/newaccount.tpl
 	"	204	9
-
-> /u/clean/htdocs/templates/signup/newaccount_preferences.tpl
-	"	8	16

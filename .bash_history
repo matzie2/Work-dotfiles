@@ -1056,3 +1056,49 @@ ll
 ll
 git status
 gs
+gs
+git commit -a
+git log
+gs
+git add -Anv
+git add -Av
+gs
+git help commit
+git commit --amend
+git log
+ll
+ls iza
+ls iza/ishndweb01infozone-apac/
+rm iza -rf
+gs
+git rm iza
+ll
+git commit -a
+ll
+git log
+gi show HEAD
+git show HEAD
+git show HEAD --name-only
+ll
+mv colours.sh bin/
+ll
+ls bin
+rm bin/colours.sh 
+cd ..
+cd
+gs
+git commit --amend
+gs
+git add colours.sh
+git commit --amend
+gs
+git rm colours.sh
+git commit --amend
+gs
+gl
+gl
+touch hello
+gs
+gl
+ls
+gs

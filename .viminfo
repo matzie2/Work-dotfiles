@@ -141,18 +141,19 @@
 	"
 
 # File marks:
-'0  1941  23  ~/bin/.git-completion.bash
-'1  53  0  ~/.bashrc
-'2  167  28  ~/.git-completion.bash
-'3  81  0  ~/.bashrc
-'4  156  29  ~/.bashrc
-'5  55  73  ~/.bashrc
-'6  258  1  ~/.git-completion.bash
-'7  177  1  ~/.git-completion.bash
-'8  10  11  ~/.bashrc
-'9  69  0  ~/.bashrc
+'0  1  0  ~/bin/.git-completion.bash
+'1  1941  23  ~/bin/.git-completion.bash
+'2  53  0  ~/.bashrc
+'3  167  28  ~/.git-completion.bash
+'4  81  0  ~/.bashrc
+'5  156  29  ~/.bashrc
+'6  55  73  ~/.bashrc
+'7  258  1  ~/.git-completion.bash
+'8  177  1  ~/.git-completion.bash
+'9  10  11  ~/.bashrc
 
 # Jumplist (newest first):
+-'  1  0  ~/bin/.git-completion.bash
 -'  1941  23  ~/bin/.git-completion.bash
 -'  2009  2  ~/bin/.git-completion.bash
 -'  559  6  ~/bin/.git-completion.bash
@@ -163,7 +164,6 @@
 -'  1666  12  ~/bin/.git-completion.bash
 -'  122  4  ~/bin/.git-completion.bash
 -'  152  41  ~/bin/.git-completion.bash
--'  1  0  ~/bin/.git-completion.bash
 -'  53  0  ~/.bashrc
 -'  54  66  ~/.bashrc
 -'  63  0  ~/.bashrc

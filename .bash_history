@@ -1102,3 +1102,13 @@ gs
 gl
 ls
 gs
+gogit
+gs
+rm hello
+gs
+git add -av
+git add -Av
+git commit -m 'more bashrc tweaks'
+cd /
+vi bin/.git-completion.bash 
+vi bin/.git-completion.bash 

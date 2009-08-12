@@ -7,9 +7,10 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-export GIT_PS1_SHOWDIRTYSTATE=" [uncommitted changes] "
+export GIT_PS1_PREFIX="Git repo on branch: "
+export GIT_PS1_SHOWDIRTYSTATE=" [warning: uncommitted changes] "
 export GIT_PS1_SHOWSTASHSTATE=" [stashed files] "
-export GIT_PS1_SHOWUNTRACKEDFILES=" [untracked files] "
+export GIT_PS1_SHOWUNTRACKEDFILES=" [warning: untracked files] "
 
 source ~/bin/colournames.sh
 source ~/bin/.git-completion.bash
@@ -68,7 +69,7 @@ export GREP_COLOR='1;33'
 #this works and lets me use vars
 #export PS1="\n\u@\h:\[\e[32;1m\]\w\[\e[0m\] \$(__git_ps1 \"(Git Branch Info: %s)\")\n\! \u \W \$"
 
-export PS1="\n\[$PURPLE_BOLD\]\u\[$WHITE\]@\[$RED_BOLD\]\h:\[$YELLOW\]\w\[\e[0m\] \[$GREEN\]\$(__git_ps1 \"(\[$YELLOW\]Git repo, branch \[$WHITE\]: %s)\")\n\[$RESETCOLOURS\]\! \W \$>"
+export PS1="\n\[$PURPLE_BOLD\]\u\[$WHITE\]@\[$RED_BOLD\]\h:\[$YELLOW\]\w\[\e[0m\] \[$GREEN\]\$(__git_ps1 \"(\[$WHITE\]$GIT_PS1_PREFIX \[$YELLOW\]: %s)\")\n\[$RESETCOLOURS\]\! \W \$>"
 
 
 

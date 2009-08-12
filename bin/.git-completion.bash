@@ -152,7 +152,7 @@ __git_ps1 ()
 						--quiet --exit-code || w="$GIT_PS1_SHOWDIRTYSTATE"
 					if git rev-parse --quiet --verify HEAD >/dev/null; then
 						git diff-index --cached --quiet \
-							--ignore-submodules HEAD -- || i="+"
+							--ignore-submodules HEAD -- || i="$GIT_PS1_SHOWUNCOMMITTEDSTATE"
 					else
 						i="#"
 					fi

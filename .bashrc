@@ -8,7 +8,8 @@ if [ -f /etc/bashrc ]; then
 fi
 
 export GIT_PS1_PREFIX="Git repo on branch: "
-export GIT_PS1_SHOWDIRTYSTATE=" [warning: uncommitted changes] "
+export GIT_PS1_SHOWUNCOMMITTEDSTATE=" [warning: staged changes not yet committed] "
+export GIT_PS1_SHOWDIRTYSTATE=" [warning: unstaged changes] "
 export GIT_PS1_SHOWSTASHSTATE=" [stashed files] "
 export GIT_PS1_SHOWUNTRACKEDFILES=" [warning: untracked files] "
 
@@ -69,7 +70,7 @@ export GREP_COLOR='1;33'
 #this works and lets me use vars
 #export PS1="\n\u@\h:\[\e[32;1m\]\w\[\e[0m\] \$(__git_ps1 \"(Git Branch Info: %s)\")\n\! \u \W \$"
 
-export PS1="\n\[$PURPLE_BOLD\]\u\[$WHITE\]@\[$RED_BOLD\]\h:\[$YELLOW\]\w\[\e[0m\] \[$GREEN\]\$(__git_ps1 \"(\[$WHITE\]$GIT_PS1_PREFIX \[$YELLOW\]: %s)\")\n\[$RESETCOLOURS\]\! \W \$>"
+export PS1="\n\[$PURPLE_BOLD\]\u\[$WHITE\]@\[$RED_BOLD\]\h:\[$YELLOW\]\w\[\e[0m\] \[$GREEN\]\$(__git_ps1 \"(\[$WHITE\]$GIT_PS1_PREFIX\[$YELLOW\] %s )\")\n\[$RESETCOLOURS\]\! \W \$>"
 
 
 

@@ -70,7 +70,15 @@ export GREP_COLOR='1;33'
 #this works and lets me use vars
 #export PS1="\n\u@\h:\[\e[32;1m\]\w\[\e[0m\] \$(__git_ps1 \"(Git Branch Info: %s)\")\n\! \u \W \$"
 
-export PS1="\n\[$PURPLE_BOLD\]\u\[$WHITE\]@\[$RED_BOLD\]\h:\[$YELLOW\]\w\[\e[0m\] \[$GREEN\]\$(__git_ps1 \"(\[$WHITE\]$GIT_PS1_PREFIX\[$YELLOW\] %s )\")\n\[$RESETCOLOURS\]\! \W \$>"
+danger() {
+      X=`pwd`
+      if [[ $X == *live* ]]
+       then
+           echo "Danger!"
+       fi
+}
+
+export PS1="\n\[$PURPLE_BOLD\]\u\[$WHITE\]@\[$RED_BOLD\]\h:\[$YELLOW\]\w\[\e[0m\] \[$GREEN\]\$(__git_ps1 \"(\[$WHITE\]$GIT_PS1_PREFIX\[$YELLOW\] %s )\")\n\[$RESETCOLOURS\]\! \[$RED_BOLD\]\$(danger)\[$RESETCOLOURS\] \W \$>"
 
 
 
@@ -135,12 +143,13 @@ fi
 
 
 #PROMPT_COMMAND='
-# HOSTNAME=`cat ~/.hostname`
+#HOSTNAME=`cat ~/.hostname`
 # MYPWD="${PWD/#$HOME/~}"
-# BRANCH=`git branch 2>/dev/null | grep '*'`
+# BRANCH="$(__git_ps1) $s"
 # [ ${#MYPWD} -gt 20 ] && MYPWD=..${MYPWD:${#MYPWD}-18}
 # echo -n -e "\033k$HOSTNAME:$MYPWD G:$BRANCH\033\\"
 #'
+
 
 #some keybindings
 

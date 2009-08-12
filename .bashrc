@@ -7,6 +7,15 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+export GIT_PS1_SHOWDIRTYSTATE=" [uncommitted changes] "
+export GIT_PS1_SHOWSTASHSTATE=" [stashed files] "
+export GIT_PS1_SHOWUNTRACKEDFILES=" [untracked files] "
+
+source ~/bin/colournames.sh
+source ~/bin/.git-completion.bash
+
+alias gs='git status'
+
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
@@ -41,8 +50,29 @@ export HISTFILESIZE=10000
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;33'
 
+
+
+
 #export PS1="\n\u@\h:\[\e[32;1m\]\w\[\e[0m\]; contains `cvs -qn diff --brief 2>/dev/null | grep Index | wc -l` modified file(s)\n\! \u \W \$>"
-export PS1="\n\u@\h:\[\e[32;1m\]\w\[\e[0m\]\n\! \u \W \$>"
+#this works, my multiline prompt, no git:
+#export PS1="\n\u@\h:\[\e[32;1m\]\w\[\e[0m\]\n\! \u \W \$>"
+#this doesn't re-evaluate:
+#export PS1="\n\u@\h:\[\e[32;1m\]\w\[\e[0m\]\n\! \u \W \w$(__git_ps1 ''(%s)'') \$"
+
+
+#current best:
+#export PS1='\n\u@\h:\[\e[32;1m\]\w\[\e[0m\] $(__git_ps1 "(Git Branch Info: %s)")\n\! \u \W \$'
+
+#this works and lets me use vars
+#export PS1="\n\u@\h:\[\e[32;1m\]\w\[\e[0m\] \$(__git_ps1 \"(Git Branch Info: %s)\")\n\! \u \W \$"
+
+export PS1="\n\[$PURPLE_BOLD\]\u\[$WHITE\]@\[$RED_BOLD\]\h:\[$YELLOW\]\w\[\e[0m\] \$(__git_ps1 \"(Git Branch Info: %s)\")\n\! \u \W \$>"
+
+
+
+#these work:
+#export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+# export PS1='\n[\u@\h:[\e[32;1m]\w\[\e[0m\]\n\! \W$(__git_ps1 " (%s)")]\$ '
 
 
 
@@ -98,3 +128,31 @@ if [ $TERM = "linux" ]
 then
     screen -xRR -S "Main"
 fi 
+
+
+#PROMPT_COMMAND='
+# HOSTNAME=`cat ~/.hostname`
+# MYPWD="${PWD/#$HOME/~}"
+# BRANCH=`git branch 2>/dev/null | grep '*'`
+# [ ${#MYPWD} -gt 20 ] && MYPWD=..${MYPWD:${#MYPWD}-18}
+# echo -n -e "\033k$HOSTNAME:$MYPWD G:$BRANCH\033\\"
+#'
+
+#some keybindings
+
+#alt_left/right arrow moves a word at a time
+bind '"\x1b\x1b\x5b\x44"':backward-word
+bind '"\x1b\x1b\x5b\x43"':forward-word
+
+# ctrl+left/right arrows:
+bind '"\e\x5b\x31\x3b\x35\x44"':backward-word
+bind '"\e\x5b\x31\x3b\x35\x43"':forward-word
+
+#alt+backspace:
+bind '"\xff"':backward-kill-word
+
+# alt+'.':
+bind '"\xae"':yank-last-arg
+
+# alt+',':
+bind '"\x1b\x2c"':yank-nth-arg

@@ -1,4 +1,8 @@
 set tags=/u/dev/tags
+
+" I don't really like this
+"set t_Co=256
+
 color murphy
 syntax on
 set showtabline=2

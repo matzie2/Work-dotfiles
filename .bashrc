@@ -13,11 +13,13 @@ export GIT_PS1_SHOWDIRTYSTATE=" [warning: unstaged changes] "
 export GIT_PS1_SHOWSTASHSTATE=" [stashed files] "
 export GIT_PS1_SHOWUNTRACKEDFILES=" [warning: untracked files] "
 
+export EDITOR=/usr/bin/vim
+
 source ~/bin/colournames.sh
 source ~/bin/.git-completion.bash
 
 alias gs='git status'
-alias gl='git log'
+alias gl='git mylog'
 alias gb='git branch'
 
 alias rm='rm -i'

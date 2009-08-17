@@ -1,0 +1,23 @@
+#!/bin/bash
+
+CURRENT=`git symbolic-ref HEAD`
+
+USERNAME=`whoami`
+
+PROVENANCE="
+** Warning from Pre-Commit Hook script:
+"
+
+MESSAGE="
+You've tried to commit to your local live branch, which is unwise.
+Instead, create a new branch for your work, for example by typing:
+  git checkout -b dev/$USERNAME/nd1234
+
+No action taken.
+"
+
+#discourage commits to local live branch
+
+[[ $CURRENT = "refs/heads/live" ]] && echo "$PROVENANCE $MESSAGE" && exit 1
+
+exit 0

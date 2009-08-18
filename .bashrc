@@ -34,8 +34,8 @@ alias pe="cd php-europe"
 alias cl='cd /u/dev/php-europe/corelib'
 alias ap='cd /u/dev/php-europe/applications'
 alias tpls='cd /u/dev/htdocs/templates'
-alias changedfiles="cvs -q diff --brief | grep Index | cut -f2 -d' '"
-function cf() { cvs -q -n up | sed -e "s@^\(.\)@\1 `pwd`/@g" | awk '{print $1,$2 $3}';}
+#alias changedfiles="cvs -q diff --brief | grep Index | cut -f2 -d' '"
+#function cf() { cvs -q -n up | sed -e "s@^\(.\)@\1 `pwd`/@g" | awk '{print $1,$2 $3}';}
 
 alias cfs='~/changedfiles.sh' 
 #alias vi='~/myvim.sh'
@@ -127,9 +127,9 @@ alias go28="sshs webdev28 \"W28 (Kevin)\""
 alias go29="sshs webdev29 \"W29 (Matt)\""
 alias goiweb="sshs iweb IWEB"
 alias go4="sshs ishwebdev04 \"W04\""
-alias go5="sshs ishwebdev04 \"W05\""
-alias go6="sshs ishwebdev04 \"W06\""
-alias go7="sshs ishwebdev04 \"W07\""
+alias go5="sshs ishwebdev05 \"W05\""
+alias go6="sshs ishwebdev06 \"W06\""
+alias go7="sshs ishwebdev07 \"W07\""
 alias gogit="sshs ishsrcctrl01 \"Git01\""
 
 

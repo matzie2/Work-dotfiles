@@ -73,11 +73,8 @@ export GREP_COLOR='1;33'
 #export PS1="\n\u@\h:\[\e[32;1m\]\w\[\e[0m\] \$(__git_ps1 \"(Git Branch Info: %s)\")\n\! \u \W \$"
 
 danger() {
-      X=`pwd`
-      if [[ $X == *live* ]]
-       then
-           echo "Danger!"
-       fi
+    
+    [[ `pwd` == *live* ]] && echo "Danger!"
 }
 
 export PS1="\n\[$PURPLE_BOLD\]\u\[$WHITE\]@\[$RED_BOLD\]\h:\[$YELLOW\]\w\[\e[0m\] \[$GREEN\]\$(__git_ps1 \"(\[$WHITE\]$GIT_PS1_PREFIX\[$YELLOW\] %s )\")\n\[$RESETCOLOURS\]\! \[$RED_BOLD\]\$(danger)\[$RESETCOLOURS\] \W \$>"

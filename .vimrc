@@ -1,4 +1,4 @@
-set tags=/u/dev/tags
+set tags=./tags,./../tags,./../../tags,./../../../tags,./../../../../tags,./../../../../../tags,./../../../../../../tags,
 
 " I don't really like this
 "set t_Co=256

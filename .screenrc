@@ -15,3 +15,5 @@ backtick 1 5 1 cat /home/msaunder/gitmessage
 #setenv SSH_AUTH_SOCK $HOME/.screen-ssh-agent
 #screen -t '' 0 ssh-agent -a $SSH_AUTH_SOCK $SHELL
 screen
+
+#HELLO WORLD!

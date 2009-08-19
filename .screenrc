@@ -4,8 +4,8 @@ startup_message off
 #caption always "%{= bw}GNU Screen on host '%H', Session Name '%S', Active Window:  '%n:%t' %{+b w} %h %=%t %c"
 
 
-#caption always "%{= bw}Host %H, Active Window:  '%n:%t' %{+b w} %h %=%t %c %1`"
-caption always "%{= bw}Host %H  %h %=%t %c %1`"
+caption always "%{= bw}Connected to a GNU screen session on %H, Active Window:  '%n:%t' %{+b w} %h %=%t %c %1`"
+#caption always "%{= bw}Host %H  %h %=%t %c %1`"
 hardstatus alwayslastline "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
 termcapinfo linux|xterm|rxvt|xterm-color ti@:te@:XT
 
